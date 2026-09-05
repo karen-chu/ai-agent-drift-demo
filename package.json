@@ -1,0 +1,12 @@
+{
+  "name": "ai-agent-drift-demo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/03-recovered.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0"
+  }
+}
