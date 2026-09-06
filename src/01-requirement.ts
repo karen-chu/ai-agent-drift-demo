@@ -6,15 +6,10 @@ async function submitForm() {
   isSubmitting = true;
   updateButton();
 
-  try {
-    await fakeRequest();
-    console.log("submitted successfully");
-  } catch (error) {
-    console.error("submission failed", error);
-  } finally {
-    isSubmitting = false;
-    updateButton();
-  }
+  await fakeRequest();
+
+  isSubmitting = false;
+  updateButton();
 }
 
 function updateButton() {
